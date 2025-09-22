@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "vite": "^6.3.6"
+   
+  },
+  "scripts": {
+     "dev": "vite",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
+  }
+}
