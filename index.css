@@ -81,18 +81,26 @@ li:hover{
   border: 2px solid #3d52a0;
   box-shadow: 4px 4px 12px rgba(61, 82, 160, 0.3);
   border-radius: 50px;
-  padding: 10px 25px;
+  padding: 10px 20px;
   z-index: 1000;
-  height: auto;
-  animation: fadeInDown 0.8s ease-out; /* navbar entrance */
+  animation: fadeInDown 0.8s ease-out;
+  width: 48%;            /* default for big screens */
+  overflow-x: auto;      /* enable horizontal scroll if needed */
+  white-space: nowrap;   /* force single line */
+  scrollbar-width: none; /* hide scrollbar (Firefox) */
+}
+.navbar::-webkit-scrollbar {
+  display: none; /* hide scrollbar (Chrome/Safari) */
 }
 
+/* Navbar List */
 .navlist {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 .navlist li a {
@@ -102,14 +110,12 @@ li:hover{
   font-family: "Outfit", sans-serif;
   color: #3d52a0;
   transition: all 0.3s ease;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 25px;
-  position: relative;
   display: inline-block;
-  transform: translateY(0);
 }
 
-/* Hover effect with lift + glow */
+/* Hover effect */
 .navlist li a:hover {
   background-color: #3d52a0;
   color: #fff;
@@ -117,53 +123,64 @@ li:hover{
   box-shadow: 0px 4px 10px rgba(61, 82, 160, 0.5);
 }
 
-/* Responsive Adjustments */
+/* ===== Responsive Adjustments ===== */
 @media (max-width: 1024px) {
-  .navlist {
-    gap: 20px;
+  .navbar {
+    width: 65%; /* tablets/small laptops */
   }
-
+  .navlist {
+    gap: 18px;
+  }
   .navlist li a {
     font-size: 18px;
-    padding: 6px 12px;
+    padding: 6px 10px;
   }
 }
 
 @media (max-width: 768px) {
   .navbar {
+    width: 80%;
     padding: 8px 15px;
     border-radius: 40px;
   }
-
   .navlist {
-    gap: 15px;
+    gap: 14px;
   }
-
   .navlist li a {
     font-size: 16px;
-    padding: 6px 10px;
+    padding: 5px 8px;
   }
 }
 
-@media (max-width: 431px) {
+@media (max-width: 480px) {
   .navbar {
-    width: 95%;
+    width: 95%; /* mobile */
     padding: 6px 12px;
   }
-
   .navlist {
     gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
-
   .navlist li a {
     font-size: 14px;
-    padding: 4px 8px;
+    padding: 4px 6px;
   }
 }
 
-/* Keyframes */
+@media (max-width: 360px) {
+  .navbar {
+    width: 98%;
+    padding: 4px 8px;
+  }
+  .navlist {
+    gap: 8px;
+  }
+  .navlist li a {
+    font-size: 12px;
+    padding: 3px 5px;
+  }
+}
+
+/* ===== Keyframes ===== */
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -174,7 +191,6 @@ li:hover{
     transform: translate(-50%, 0);
   }
 }
-
 
 
     body {
