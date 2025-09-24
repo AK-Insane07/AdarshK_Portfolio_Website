@@ -224,6 +224,8 @@ header {
 .header-text {
   flex: 1;
   text-align: left;
+  position: relative;
+  right: 13px;
 }
 
 .header-text h1 {
@@ -1075,4 +1077,5 @@ footer p {
     font-size: 0.7rem;
   }
 }
+
 
