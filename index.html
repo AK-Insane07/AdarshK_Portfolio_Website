@@ -1,7 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8"><!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Ak-Portfolio</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+<body>
+    <!-- <header>
+        <nav>
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="sec1">
+            <div class="prt1">
+<h1>Hi, I’m Adarsh 👋<br>
+A Computer Science Engineer | Data Analyst | Aspiring Data Scientist</h1>
+            </div>
+        </section>
+    </header> -->
+
+<header>
+  <nav class="navbar">
+    <ul class="navlist">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<!-- <header>
+    <h1>Adarsh Shameekapoor Kamde</h1>
+    <h2>ML Data Associate II @ Amazon</h2>
+    <p class="tagline">Data Analyst | Data Visualization | Machine Learning Enthusiast</p>
+    <div class="buttons">
+      <a href="your-resume-link.pdf" target="_blank"><button class="btn btn-primary">Resume</button></a>
+      <a href="https://www.linkedin.com/in/adarsh-kamde-474b81317/" target="_blank"><button class="btn btn-outline">LinkedIn</button></a>
+      <a href="https://github.com/yourgithub" target="_blank"><button class="btn btn-outline">GitHub</button></a>
+    </div>
+  </header> -->
+
+
+  <header>
+  <div class="header-content" id="home">
+    <div class="header-text hidden-section">
+  <h1>Adarsh Shameekapoor Kamde</h1>
+  <h2>ML Data Associate II @ Amazon</h2>
+  <p class="tagline">Data Analyst | Data Visualization | Machine Learning Enthusiast</p>
+  <div class="buttons">
+    <a href="#" target="_blank"><button class="btn btn-primary">Resume</button></a>
+    <a href="https://www.linkedin.com/in/adarsh-kamde-474b81317/" target="_blank"><button class="btn btn-outline">LinkedIn</button></a>
+    <a href="https://github.com/AK-Insane07" target="_blank"><button class="btn btn-outline">GitHub</button></a>
+  </div>
+</div>
+
+    
+    <div class="header-image">
+  <div class="wrapper">
+    <!-- Radio buttons -->
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <input type="radio" name="slider" id="slide5">
+    <input type="radio" name="slider" id="slide6">
+    <input type="radio" name="slider" id="slide7">
+
+    <!-- Slider images -->
+    <div class="slider-wrapper">
+      <div class="inner">
+        <img src="AK_Sec6_img.jpeg" alt="Adarsh 6">
+        <img src="AK_Sec2_img.jpeg" alt="Adarsh 2">
+        <img src="AK_Sec7_img.jpeg" alt="Adarsh 7">
+        <img src="AK_Sec5_img.jpeg" alt="Adarsh 5">
+        <img src="AK_Sec1_img.JPG" alt="Adarsh 1">
+        <img src="AK_Sec4_img.jpeg" alt="Adarsh 4">
+        <img src="AK_Sec3_img.jpeg" alt="Adarsh 3">
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="slider-dot-control">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+      <label for="slide5"></label>
+      <label for="slide6"></label>
+      <label for="slide7"></label>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+
+  </div>
+</header>
+
+
+
+
+  <!-- About Section -->
+<section id="about" class="hidden-section">
+  <h2>About Me</h2>
+  <p>
+    I am an enthusiastic data analyst with experience in Python, SQL, Power BI, and machine learning. 
+    Currently working as an ML Data Associate II at Amazon, I have hands-on expertise in building dashboards, 
+    performing statistical analysis, and creating predictive models. My projects span across sales analysis, 
+    healthcare, and legal domains, where I focus on deriving actionable insights and delivering clean, 
+    impactful data-driven solutions.
+  </p>
+</section>
+
+<!-- work Experience -->
+
+<section id="experience" class="experience-section hidden-section">
+  <h2 class="section-title">Work Experience</h2>
+
+  <div class="timeline">
+    <!-- KultureHire -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Oct 2024 - Dec 2024</div>
+      <div class="timeline-content">
+        <div class="company-header">
+          <img src="KultureHire_logo.png" alt="KultureHire Logo" class="company-logo">
+          <h3>Business Analyst Intern @ KultureHire</h3>
+        </div>
+        <p class="company-subtitle">Company specializing in hiring and talent solutions</p>
+        <ul>
+          <li>Reduced data prep time by <strong>30%</strong> with Python, Pandas, SQL.</li>
+          <li>Built <strong>5+ Power BI dashboards</strong>, boosting forecast accuracy.</li>
+          <li>Improved workflow efficiency by <strong>20%</strong>.</li>
+          <li>Supported <strong>10+ initiatives</strong> with actionable insights.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Amazon -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">Aug 2025 - Present</div>
+      <div class="timeline-content">
+        <div class="company-header">
+          <img src="aws-logo.png" alt="Amazon Logo" class="company-logo">
+          <h3>ML Data Associate II @ Amazon</h3>
+        </div>
+        <p class="company-subtitle">Global leader in e-commerce, AI, and cloud solutions</p>
+        <ul>
+          <li>Perform data annotation & validation to improve ML models.</li>
+          <li>Ensured high-quality datasets with error analysis.</li>
+          <li>Worked with cross-functional teams for model training.</li>
+          <li>Optimized workflows by identifying process gaps.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Skills Section -->
+<section id="skills" class="hidden-section">
+  <h2>Skills</h2>
+
+  <!-- Programming Languages -->
+  <h3>Programming Languages</h3>
+  <div class="skills-grid">
+    <div class="skill">Python</div>
+    <div class="skill">SQL</div>
+    <div class="skill">R Programming</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Tailwind CSS</div>
+    <div class="skill">JavaScript</div>
+  </div>
+
+  <!-- Platforms & Tools -->
+  <h3>Platforms & Tools</h3>
+  <div class="skills-grid">
+    <div class="skill">Power BI</div>
+    <div class="skill">JIRA</div>
+    <div class="skill">Excel</div>
+    <div class="skill">PowerPoint</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Visual Studio Code</div>
+    <div class="skill">Jupyter Notebook</div>
+    <div class="skill">Google Colab</div>
+  </div>
+
+  <!-- Technical Skills -->
+  <h3>Technical Skills</h3>
+  <div class="skills-grid">
+    <div class="skill">Pandas</div>
+    <div class="skill">NumPy</div>
+    <div class="skill">Matplotlib</div>
+    <div class="skill">Seaborn</div>
+    <div class="skill">Data Cleaning</div>
+    <div class="skill">Agile</div>
+    <div class="skill">Scrum</div>
+    <div class="skill">ETL Development</div>
+    <div class="skill">Advanced Excel</div>
+    <div class="skill">Dashboard Creation</div>
+    <div class="skill">SQL Programming</div>
+    <div class="skill">Python Programming</div>
+    <div class="skill">Data Analysis</div>
+    <div class="skill">BI Tools Expertise</div>
+    <div class="skill">Google Analytics</div>
+    <div class="skill">OOP</div>
+  </div>
+
+  <!-- Annotation & Curation -->
+  <h3>Annotation & Curation</h3>
+  <div class="skills-grid">
+    <div class="skill">Data Annotation</div>
+    <div class="skill">Data Labelling</div>
+    <div class="skill">Data Curation</div>
+    <div class="skill">Model Evaluation</div>
+    <div class="skill">Supporting Data Scientists & Engineers</div>
+    <div class="skill">Providing Clean, Well-Annotated Datasets</div>
+    <div class="skill">Tracking Data Issues</div>
+    <div class="skill">Maintaining Documentation</div>
+  </div>
+
+  <!-- Soft Skills -->
+  <h3>Soft Skills</h3>
+  <div class="skills-grid">
+    <div class="skill">Report Building</div>
+    <div class="skill">Attention to Detail</div>
+    <div class="skill">Adaptability</div>
+    <div class="skill">Problem-Solving</div>
+    <div class="skill">Collaboration</div>
+    <div class="skill">Effective Communication</div>
+    <div class="skill">Critical Thinking</div>
+    <div class="skill">Interpersonal Skills</div>
+  </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card hidden-card">
+      <img src="MDPT.png" alt="MDPT Project Screenshot">
+      <h3>MDPT - Multiple Disease Prediction Tool</h3>
+      <p>Machine learning-based tool predicting multiple diseases with an interactive HTML, Tailwind CSS, and JS frontend.</p>
+      <a href="https://ak-insane07.github.io/MDPT_majorProject/" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+
+    <div class="project-card hidden-card">
+      <img src="AI-Attorney.png" alt="AI-Attorney Screenshot">
+      <h3>AI-Attorney</h3>
+      <p>College minor project leveraging AI to show legal sections and insights for legal research and assistance.</p>
+      <a href="https://ak-insane07.github.io/AI-attorney-_redesigned/" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+
+    <div class="project-card hidden-card">
+      <img src="Food Profitable.png" alt="Food Delivery Project Screenshot">
+      <h3>Food Delivery Cost & Profitability Analysis</h3>
+      <p>Power BI dashboard analyzing cost drivers, delivery charges, and overall profitability for food delivery services.</p>
+      <a href="https://github.com/AK-Insane07/Food-Delivery-Cost-and-Profitability-analysis" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+
+    <div class="project-card hidden-card">
+      <img src="Flipkart Sales Analysis.png" alt="Flipkart Sales Analysis Screenshot">
+      <h3>Flipkart Sales Analysis</h3>
+      <p>Comprehensive sales insights and trends visualized in Power BI for Flipkart products and categories.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyOTQ5ODQtYzFlNi00YmI1LThiYWQtNzY4ZWQ3ZTUyOWQ4IiwidCI6IjRhNzhmOWQwLWFiZGUtNDBjNC1hMDg4LTBiOTg5NTk5M2M0YSJ9" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+
+    <div class="project-card hidden-card">
+      <img src="Tata Car Sales Analysis.png" alt="Tata Car Sales Dashboard Screenshot">
+      <h3>Tata Car Sales Dashboard</h3>
+      <p>Interactive dashboard visualizing Tata car sales, performance metrics, and growth patterns across regions.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyOTQ5ODQtYzFlNi00YmI1LThiYWQtNzY4ZWQ3ZTUyOWQ4IiwidCI6IjRhNzhmOWQwLWFiZGUtNDBjNC1hMDg4LTBiOTg5NTk5M2M0YSJ9" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+
+    <div class="project-card hidden-card">
+      <img src="Blinkit Sales Analysis.png" alt="Blinkit Sales Analysis Screenshot">
+      <h3>Blinkit Sales Analysis</h3>
+      <p>Python and Seaborn-based analysis exploring Blinkit consumer preferences, demand trends, and sales data insights.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyOTQ5ODQtYzFlNi00YmI1LThiYWQtNzY4ZWQ3ZTUyOWQ4IiwidCI6IjRhNzhmOWQwLWFiZGUtNDBjNC1hMDg4LTBiOTg5NTk5M2M0YSJ9" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+
+    <div class="project-card hidden-card">
+      <img src="Ola Sales Analysis.png" alt="OLA Sales Analysis Screenshot">
+      <h3>OLA Sales Analysis</h3>
+      <p>Analysis of OLA ride data using Python and dashboards to derive insights into performance and trends.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyOTQ5ODQtYzFlNi00YmI1LThiYWQtNzY4ZWQ3ZTUyOWQ4IiwidCI6IjRhNzhmOWQwLWFiZGUtNDBjNC1hMDg4LTBiOTg5NTk5M2M0YSJ9" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+    
+    <div class="project-card hidden-card">
+      <img src="Addidas Sales Analysis.png" alt="Adidas Sales Analysis Screenshot">
+      <h3>Adidas Sales Analysis</h3>
+      <p>Performed detailed sales analysis using Python and Power BI to identify trends, revenue patterns, and customer behavior for Adidas products. Created interactive dashboards for actionable insights.</p>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiM2QyOTQ5ODQtYzFlNi00YmI1LThiYWQtNzY4ZWQ3ZTUyOWQ4IiwidCI6IjRhNzhmOWQwLWFiZGUtNDBjNC1hMDg4LTBiOTg5NTk5M2M0YSJ9" target="_blank"><button class="btn btn-primary">View Project</button></a>
+    </div>
+
+
+  </div>
+</section>
+
+
+<!-- Certification -->
+
+<section id="certifications" class="hidden-section">
+  <h2>Certifications</h2>
+  <div class="cert-grid">
+    
+    <!-- <div class="cert-card">
+      <img src="AWS_ ML_certi.jpg" alt="AWS ML Certification">
+      <p>AWS Academy Machine Learning Foundations</p>
+      <a href="https://link-to-certificate" target="_blank" class="cert-btn">View Certificate</a>
+    </div> -->
+
+
+
+    <!-- Example cert card -->
+    <div class="cert-card">
+      <img src="AWS_ ML_certi.jpg" alt="AWS ML Certification">
+      <p>AWS Academy Machine Learning Foundations</p>
+      <button class="cert-btn" onclick="openCert('AWS_ ML_certi.jpg')">View Certificate</button>
+    </div>
+
+
+    <div class="cert-card">
+      <img src="PWc certificate.jpg" alt="PwC Power BI Simulation">
+      <p>PWC Power BI Simulation (Forage)</p>
+      <button class="cert-btn" onclick="openCert('Pwc certificate.jpg')">View Certificate</button>
+
+    </div>
+
+    <div class="cert-card">
+      <img src="Tata data vizualization certificate.jpg" alt="Tata Power BI Simulation">
+      <p>Tata Data Visualization (Forage)</p>
+      <button class="cert-btn" onclick="openCert('Tata data vizualization certificate.jpg')">View Certificate</button>
+
+    </div>
+    <div class="cert-card">
+      <img src="Copyright Certificate.jpg" alt="Crop Price Prediction Copyright">
+      <p>Crop Price Prediction (Copyrighted Project)</p>
+      <button class="cert-btn" onclick="openCert('Copyright Certificate.jpg')">View Certificate</button>
+
+    </div>
+    <div class="cert-card">
+      <img src="Excel Dashboarding & Pivot Tables.jpg" alt="Excel Dashboard Certification">
+      <p>Excel Dashboarding & Pivot Tables</p>
+      <button class="cert-btn" onclick="openCert('Excel Dashboarding & Pivot Tables.jpg')">View Certificate</button>
+
+    </div>
+    <div class="cert-card">
+      <img src="Data Analyst-Certificate.png" alt="Data Analyst Certification">
+      <p>Data Analyst Certification (OneRoadmap)</p>
+      <button class="cert-btn" onclick="openCert('Data Analyst-Certificate.png')">View Certificate</button>
+
+    </div>
+    <div class="cert-card">
+      <img src="Accenture certificate.jpg" alt="Accenture Data Analytics and Visualization Job Simulation">
+      <p>Accenture Data Analytics and Visualization Job Simulation</p>
+      <button class="cert-btn" onclick="openCert('Accenture certificate.jpg')">View Certificate</button>
+
+    </div>
+    <div class="cert-card">
+      <img src="Jira Certificate.jpg" alt="Introduction to JIRA">
+      <p>Introduction to JIRA</p>
+      <button class="cert-btn" onclick="openCert('Jira Certificate.jpg')">View Certificate</button>
+
+    </div>
+    <div class="cert-card">
+      <img src="Programming_Essentials_in_Python_certificate.jpg" alt="Programming Essentials in Python">
+      <p>Programming Essentials in Python</p>
+      <button class="cert-btn" onclick="openCert('Programming_Essentials_in_Python_certificate.jpg')">View Certificate</button>
+
+    </div>
+    <div class="cert-card">
+      <img src="quantium data analyst certificateś.jpg" alt="Quantium Data Analytics Job Simulation">
+      <p>Quantium Data Analytics Job Simulation</p>
+     <button class="cert-btn" onclick="openCert('quantium data analyst certificateś.jpg')">View Certificate</button>
+
+    </div>
+
+    <!-- Modal -->
+<div id="certModal" class="modal">
+  <span class="close" onclick="closeCert()">&times;</span>
+  <img class="modal-content" id="certImage">
+</div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- footer -->
+
+<footer>
+  <div class="footer-container" id="footer">
+    <h2>Adarsh Kamde</h2>
+    <p>Turning data into insights | Building solutions with tech</p>
+
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/adarsh-kamde-474b81317/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/AK-Insane07" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=adarshk07.dev@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+       </a>  
+    </div>
+
+    <p class="copyright">© 2025 Adarsh Kamde. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navList = document.querySelector(".navlist");
+
+  menuToggle.addEventListener("click", () => {
+    navList.classList.toggle("show");
+  });
+});
+
+
+
+
+
+
+  const totalSlides = 7; // total number of slides
+  let currentSlide = 1;
+
+  setInterval(() => {
+    currentSlide++;
+    if (currentSlide > totalSlides) {
+      currentSlide = 1;
+    }
+    document.getElementById(`slide${currentSlide}`).checked = true;
+  }, 4000); // 4000ms = 4 seconds
+
+  // Select all elements that need the scroll animation
+const hiddenSections = document.querySelectorAll(".hidden-section");
+
+const sectionObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target); // run once per element
+    }
+  });
+}, { threshold: 0.2 }); // 20% visible triggers animation
+
+hiddenSections.forEach(section => {
+  sectionObserver.observe(section);
+});
+
+
+  // Observe the about section
+const aboutSection = document.querySelector("#about");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target); // run only once
+    }
+  });
+}, { threshold: 0.2 }); // 20% of section visible triggers animation
+
+observer.observe(aboutSection);
+
+const projectCards = document.querySelectorAll(".project-card.hidden-card");
+
+const cardsObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      // Add a staggered delay for each card
+      setTimeout(() => {
+        entry.target.classList.add("show-card");
+      }, index * 150); // 150ms delay per card
+
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+projectCards.forEach(card => cardsObserver.observe(card));
+
+// Scroll animation with staggered effect
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(
+    ".cert-card, .timeline-item, .project-card"
+  );
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Add staggered delay (150ms between each element)
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, index * 150);
+
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  elements.forEach(el => {
+    // ensure they start hidden
+    el.classList.add("hidden-card");
+    observer.observe(el);
+  });
+});
+
+
+
+
+function openCert(src) {
+  const modal = document.getElementById("certModal");
+  const certImage = document.getElementById("certImage");
+  certImage.src = src;
+  modal.style.display = "flex";
+}
+
+function closeCert() {
+  document.getElementById("certModal").style.display = "none";
+}
+
+
+// Slide-up animation on scroll
+document.addEventListener("DOMContentLoaded", () => {
+  const contactSection = document.querySelector(".contact-section");
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+  observer.observe(contactSection);
+});
+
+// Optional: handle form submission response (without page reload)
+const form = document.querySelector(".contact-form");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const responseEl = document.querySelector(".form-response");
+
+  try {
+    const res = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    });
+
+    if (res.ok) {
+      responseEl.textContent = "Message sent successfully!";
+      form.reset();
+    } else {
+      responseEl.textContent = "Oops! Something went wrong.";
+    }
+  } catch (error) {
+    responseEl.textContent = "Error sending message!";
+  }
+});
+
+
+
+
+
+
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".timeline-item");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(item => observer.observe(item));
+});
+</script>
+
+
+</body>
+</html>         
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -635,3 +1271,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>         
+
