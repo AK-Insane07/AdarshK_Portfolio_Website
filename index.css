@@ -1,3 +1,6 @@
+
+
+
 .tryout{
 
 
@@ -225,7 +228,7 @@ header {
   flex: 1;
   text-align: left;
   position: relative;
-  right: 13px;
+    right: 13px;
 }
 
 .header-text h1 {
@@ -265,6 +268,7 @@ header {
 
 .btn-primary {
   background-color: #3d52a0;
+  padding: 11px;
   color: white;
 }
 
@@ -392,6 +396,11 @@ input {
     width: 45vw;
     height: 60vh;
   }
+  .btn-primary {
+  background-color: #3d52a0;
+  padding: 11px;
+  color: white;
+}
 }
 
 /* Tablets (<=768px) */
@@ -423,6 +432,11 @@ input {
     width: 70vw;
     height: 50vh;
   }
+  .btn-primary {
+  background-color: #3d52a0;
+  padding: 11px;
+  color: white;
+}
 }
 
 /* Mobile phones (<=430px) */
@@ -448,6 +462,11 @@ input {
     width: 90vw;
     height: 40vh;
   }
+  .btn-primary {
+  background-color: #3d52a0;
+  padding: 10px;
+  color: white;
+}
 }
 
 
@@ -1077,5 +1096,3 @@ footer p {
     font-size: 0.7rem;
   }
 }
-
-
