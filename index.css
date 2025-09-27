@@ -889,6 +889,9 @@ input {
 
 /* === Responsive === */
 @media (max-width: 768px) {
+  .modal{
+    height:20%;
+  }
   .modal-content {
     height: 60%;
   }
@@ -900,6 +903,9 @@ input {
 }
 
 @media (max-width: 480px) {
+  .modal{
+    height:20%;
+  }
   .modal-content {
     height: 50%;
   }
@@ -1052,3 +1058,4 @@ footer p {
     font-size: 0.7rem;
   }
 }
+
