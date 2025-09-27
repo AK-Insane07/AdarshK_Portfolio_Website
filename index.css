@@ -893,7 +893,7 @@ input {
 }
 
 .modal {
-  display: none;
+  display:flex;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -903,7 +903,7 @@ input {
   background: rgba(0,0,0,0.8);
   justify-content: center;
   align-items: center;
-  padding: 20px; /* space around on smaller screens */
+  /* padding: 20px; space around on smaller screens */
   box-sizing: border-box;
 }
 
@@ -934,8 +934,11 @@ input {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .modal{
+    max-height: 25%;
+  }
   .modal-content {
-    max-height: 60%;
+    height: 60%;
   }
   .close {
     top: 10px;
@@ -945,8 +948,11 @@ input {
 }
 
 @media (max-width: 480px) {
+  .modal{
+    max-height: 20%;
+  }
   .modal-content {
-    max-height: 50%;
+    height: 50%;
   }
   .close {
     font-size: 24px;
