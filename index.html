@@ -412,11 +412,12 @@ A Computer Science Engineer | Data Analyst | Aspiring Data Scientist</h1>
 
     </div>
 
-    <!-- Modal -->
-<div id="certModal" class="modal">
-  <span class="close" onclick="closeCert()">&times;</span>
-  <img class="modal-content" id="certImage">
-</div>
+<!-- Modal -->
+    <div id="certModal" class="modal">
+      <span class="close" onclick="closeCert()">&times;</span>
+      <img class="modal-content" id="certImage">
+    </div>
+
   </div>
 </section>
 
@@ -566,16 +567,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-function openCert(src) {
-  const modal = document.getElementById("certModal");
-  const certImage = document.getElementById("certImage");
-  certImage.src = src;
+const modal = document.getElementById("certModal");
+const modalImg = document.getElementById("certImage");
+
+// Function to open modal with the certificate image
+function openCert(imgSrc) {
   modal.style.display = "flex";
+  modalImg.src = imgSrc;
 }
 
+// Function to close the modal
 function closeCert() {
-  document.getElementById("certModal").style.display = "none";
+  modal.style.display = "none";
 }
+
+// Close when clicking outside the image
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    closeCert();
+  }
+});
+
+
 
 
 // Slide-up animation on scroll
