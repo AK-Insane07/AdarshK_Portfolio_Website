@@ -890,7 +890,7 @@ input {
 /* === Responsive === */
 @media (max-width: 768px) {
   .modal{
-    height:20%;
+    height:40%;
   }
   .modal-content {
     height: 60%;
@@ -1058,4 +1058,5 @@ footer p {
     font-size: 0.7rem;
   }
 }
+
 
